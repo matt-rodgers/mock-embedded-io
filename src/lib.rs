@@ -352,7 +352,7 @@ impl embedded_io::Read for Source {
                 let (to_send, to_pend) = data.split_at(n);
 
                 // If we can't send all the data to the caller, put some back in the queue
-                if to_pend.len() > 0 {
+                if !to_pend.is_empty() {
                     self.queue.push_front(ReadItem::Data(Vec::from(to_pend)));
                 }
 
