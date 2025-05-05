@@ -1,0 +1,13 @@
+[package]
+name = "mock-embedded-io"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Mock implementations of the embedded_io and embedded_io_async traits"
+
+[dev-dependencies]
+tokio = { version = "1.44", features = ["full"] }
+
+[dependencies]
+embedded-io = "0.6.1"
+embedded-io-async = "0.6.1"
