@@ -4,6 +4,10 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Mock implementations of the embedded_io and embedded_io_async traits"
+homepage = "https://github.com/matt-rodgers/mock-embedded-io/"
+repository = "https://github.com/matt-rodgers/mock-embedded-io/"
+readme = "readme.md"
+categories = [ "embedded", "no-std" ]
 
 [dev-dependencies]
 tokio = { version = "1.44", features = ["full"] }
